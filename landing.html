@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>landing page</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="landing.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!--header start-->
+<header>
+	<div class="container">
+		<div class="row">
+		<div class="brand-name">
+			<a href="" class="logo">SAYPA<span> <img src="camera.png" height="25"></span></a>
+			
+		</div>
+		<button class="ham-burger">
+			<i><img src="menu.png" height="25" ></i>
+			
+		</button>
+		<div class="navbar" id="navbarto">
+			<ul>
+				<li><a href="#" >Home</a></li>
+				<li><a href="#" >About</a></li>
+				<li><a href="#" >Services</a></li>
+				<li><a href="#" >Work</a></li>
+				<li><a href="#" >Contact</a></li>
+			</ul>
+			
+		</div>
+		
+	</div>
+	</div>
+</header>
+
+<!--header end-->
+
+
+<!--home start-->
+
+<section class="home" id="home">
+<div class="container">
+	<div  class="row full-screen">
+		<div class="home-content">
+			<div class="block">
+				<h3>Welcome To</h3>
+				<h1>Saypa</h1>
+				<h1>Photography</h1>
+			
+			</div>
+		</div>
+	</div>
+</div>
+	
+</section>
+
+
+
+
+
+  <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#navbarto").fadeToggle()
+      
+  });
+});
+</script>
+
+</body>
+</html>

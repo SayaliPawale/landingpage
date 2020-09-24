@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins',sans-serif;
+}
+*{
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 1140px;
+	margin: auto;
+}
+
+
+.row{
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*Header sTRT*/
+
+header{
+	
+	background-color: #333333;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	border-bottom: 1px solid #423940;
+	padding: 0px 15px;
+	z-index: 10;
+
+}
+header .row{
+
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .brand-name a{
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: 600;
+	color: #ffff;
+	text-transform: uppercase;
+	position: relative;
+     
+}
+
+
+header .navbar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+ 	
+ }
+ header .navbar ul li{
+ 	display: inline-block;
+ 	margin-left: 35px;
+
+ }
+
+
+  header .navbar ul li a{
+  	font-size: 15px;
+  	text-decoration: none;
+  	line-height: 72px;
+  	color: #ffff;
+  	display: block;
+  	font-weight: 600;
+  	position: relative;
+
+
+  }
+ 
+
+/*Home start*/
+
+.home{
+	min-height: 100vh;
+	background-image: url(cam.png);
+	background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center;
+	  padding: 15px;
+}
+
+
+.home .full-screen{
+
+	min-height: 100vh;
+}
+ .home .home-content{
+ 
+ 	flex: 0 0 100%;
+ 	max-width: 100%;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	align-items: center;
+ }
+ .home .home-content .block{
+
+ 	flex: 0 0 75%;
+ 	max-width: 75%;
+ 	padding-left: 35px;
+ 	border-left: 5px solid black;
+ 	margin-top: 50px;
+ }
+
+ .home .home-content .block h1{
+ 	color: black;
+ 	font-size: 70px;
+ 	font-weight: 600;
+ 	margin: 0;
+ 	padding: 0;
+ 	transition: all .8s ease;
+ 
+ }
+ .home .home-content .block h3{
+ 	color: black;
+ 	font-size: 25px;
+ 	font-weight: 500;
+ 	margin: 0;
+ 	padding: 0;
+ 	transition: all .3s ease;
+ 
+ }
+.ham-burger{
+	font-size: 20px;
+   height: 27px;
+ 
+   width: 35px;
+   background-color: #ffffff;
+   color:#000000;
+   border-radius: 5px;
+   line-height: 27px;
+   text-align: center; 
+   cursor: pointer;
+   display: none;
+   border: 1px solid #eeeeee;
+
+}
+
+
+
+@media(max-width: 991px){
+	.home .home-content .block h1{
+		font-size: 50px;
+	}
+}
+
+@media(max-width: 767px){
+	.home .home-content .block h1{
+		font-size: 40px;
+	}
+	.home .home-content .block h3{
+		font-size: 25px;
+	}
+	header{
+		padding: 15px;
+		position: fixed;
+		background-color: #ffff;
+		border:none;
+	}
+	header .brand-name a{
+		color: #000000;
+	}
+	
+	.ham-burger{
+		display: inline-block;
+	}
+	.navbar{
+		position: absolute;
+		background-color: #ffffff;
+		width: 100%;
+		left: 0px;
+		top: 60px;
+		padding: 15px;
+		border-top: 1px solid #eeeeee;
+		display: none;
+		text-align: center;
+		
+	}
+	
+
+
+	header .navbar ul li{
+		display: block;
+		margin-left: 0;
+	}
+	header .navbar ul li a{
+		line-height: 42px;
+		color: #000000;
+	}
+	header .navbar ul li a::before{
+		background-color: black;
+	}
+	
+
+
+	
+}
+
+
+@media(max-width: 500px){
+	.home .home-content .block h1{
+		font-size: 30px;
+		color: white;
+	}
+	.home .home-content .block h3{
+		font-size: 20px;
+		color: white;
+	}
+	.home .home-content .block{
+		padding-left: 20px;
+	}
+ 
+
+.home{
+	background-image: url(camm.jpg);
+}
+
+}
